@@ -1,4 +1,4 @@
-few#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Extract tables from PDF and add them to the database with ML row classification.
 

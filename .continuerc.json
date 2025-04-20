@@ -1,0 +1,50 @@
+{
+"projectDescription": "This project contains Python and R code for data analysis and modeling.",
+
+"fileStructure": {
+    "scripts/": "Main source code directory containing Python modules",
+    "R/": "R scripts and functions",
+    "data/": "Raw and processed data files",
+    "notebooks/": "Jupyter notebooks for analysis",
+    "tests/": "Unit and integration tests"
+},
+
+"conventions": {
+    "python": {
+    "style": "PEP 8 with 88 character line length (Black)",
+    "docstringStyle": "NumPy",
+    "importOrder": "Standard library, third party, local modules"
+    },
+    "r": {
+    "style": "tidyverse style guide",
+    "docstringStyle": "Roxygen2",
+    "namingConvention": "snake_case for functions and variables"
+    }
+},
+
+"dependencies": {
+    "python": ["pandas", "numpy", "scikit-learn", "matplotlib"],
+    "r": ["tidyverse", "data.table", "ggplot2"]
+},
+
+"contextEnhancers": {
+    "importantFiles": [
+    "pyproject.toml",
+    "DESCRIPTION",
+    "src/utils/helpers.py",
+    "R/common_functions.R"
+    ]
+},
+
+"customCommands": {
+    "data-pipeline": {
+    "prompt": "Analyze this data processing pipeline. Consider efficiency, error handling, and suggest improvements."
+    },
+    "viz-improve": {
+    "prompt": "Review this visualization code (Python or R) and suggest improvements for clarity, aesthetics, and information density."
+    },
+    "document-analysis": {
+    "prompt": "Document this analysis code with appropriate comments explaining the workflow and key decisions."
+    }
+}
+}
