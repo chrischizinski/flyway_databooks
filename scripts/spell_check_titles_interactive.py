@@ -1,6 +1,6 @@
 import argparse
 from pathlib import Path
-from spell_check_titles import correct_titles_from_json
+from scripts.spell_check_titles import correct_titles_from_json
 
 def main():
     parser = argparse.ArgumentParser(description="Spell check and clean TOC titles.")
@@ -17,9 +17,9 @@ def main():
         dict_path=args.dict,
         output_path=args.output,
         known_path=args.known,
-        interactive=args.interactive
+        interactive=args.interactive,
+        quit_on_reject=True  # always enabled
     )
 
 if __name__ == "__main__":
     main()
-
