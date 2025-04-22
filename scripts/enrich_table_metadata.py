@@ -60,9 +60,30 @@ def clean_title(title, corrected_toc=None):
 
 
 def has_multiple_tables_indicator(title):
-    """Check if title indicates multiple tables using keywords."""
-    # Look for "and" as a word or commas that likely separate table names
-    return bool(re.search(r'\band\b|\,', title))
+    """
+    Check if a title might indicate multiple tables.
+    This is now just a preliminary check - actual PDF verification is preferred.
+    """
+    # Simple indicators
+    has_and = ' and ' in title.lower()
+    has_comma = ',' in title
+    
+    # Simple exclusions (common phrases that don't indicate separate tables)
+    exclusions = [
+        "and minnesota", 
+        "and average", 
+        "x mallard"
+    ]
+    
+    if has_and or has_comma:
+        # Check exclusions
+        if any(excl in title.lower() for excl in exclusions):
+            logger.info(f"Title has 'and'/comma but matches exclusion pattern: {title}")
+            return False
+        logger.info(f"Title might indicate multiple tables: {title}")
+        return True
+    
+    return False
 
 
 def split_table_title(title):
@@ -264,56 +285,67 @@ def enrich_table_metadata(input_metadata_path, corrected_toc_path, output_metada
         item['original_title'] = title
         item['title'] = cleaned_title
         
-        # Check if this item might contain multiple tables
-        if has_multiple_tables_indicator(cleaned_title):
-            # Try to find the PDF
-            pdf_path = find_pdf_for_item(item, pdf_dirs)
-            
-            # Split the title, whether we can verify with PDF or not
-            split_titles = split_table_title(cleaned_title)
-            
-            # If we have multiple split titles, create separate items
-            if len(split_titles) > 1:
-                # If we have PDF access, try to verify multiple tables
-                table_positions = []
-                
-                if pdf_path and os.path.exists(pdf_path) and PYMUPDF_AVAILABLE:
-                    try:
-                        page_number = item.get('pdf_index', 0)
-                        logger.info(f"Analyzing PDF {pdf_path}, page {page_number}")
-                        table_positions = detect_tables_in_page(pdf_path, page_number)
-                        if len(table_positions) > 1:
-                            logger.info(f"Found multiple tables on page {page_number}")
-                    except Exception as e:
-                        logger.error(f"Error detecting tables in PDF: {e}")
-                
-                # If we couldn't verify with PDF or found fewer tables than titles
-                if not table_positions or len(table_positions) < len(split_titles):
-                    # Create artificial positions based on number of titles
-                    table_count = len(split_titles)
-                    height_per_table = 1.0 / table_count
-                    table_positions = [(i * height_per_table, (i + 1) * height_per_table) 
-                                      for i in range(table_count)]
-                    logger.info(f"Using artificial table positions for {cleaned_title}")
-                
-                # Create separate items for each split title
-                for j, split_title in enumerate(split_titles):
-                    new_item = item.copy()
-                    new_item['title'] = split_title
-                    new_item['table_position'] = j + 1  # 1-based index
-                    new_item['table_count'] = len(split_titles)
-                    if pdf_path:
-                        new_item['pdf_path'] = pdf_path
-                    if j < len(table_positions):
-                        new_item['table_vertical_range'] = table_positions[j]
-                    new_item['split_from'] = title
-                    new_item['split_method'] = 'title_indicator'
-                    enriched_metadata.append(new_item)
-                
-                # Skip adding the original item since we created split items
-                continue
+        # Initial check if this title *might* contain multiple tables
+        might_have_multiple = has_multiple_tables_indicator(cleaned_title)
         
-        # For single tables or if the title couldn't be split
+        if might_have_multiple:
+            # Try to find the PDF to verify
+            pdf_path = find_pdf_for_item(item, pdf_dirs)
+            has_multiple_tables = False
+            table_positions = []
+            
+            # PDF-based verification (primary method)
+            if pdf_path and os.path.exists(pdf_path) and PYMUPDF_AVAILABLE:
+                try:
+                    page_number = item.get('pdf_index', 0)
+                    logger.info(f"Verifying multiple tables in PDF {pdf_path}, page {page_number}")
+                    
+                    table_positions = detect_tables_in_page(pdf_path, page_number)
+                    has_multiple_tables = len(table_positions) > 1
+                    
+                    if has_multiple_tables:
+                        logger.info(f"PDF verification confirms multiple tables on page {page_number}")
+                    else:
+                        logger.info(f"PDF verification found only one table on page {page_number}")
+                        
+                except Exception as e:
+                    logger.error(f"Error detecting tables in PDF: {e}")
+            
+            # If PDF verification confirmed multiple tables or we don't have PDF access
+            # and the title strongly suggests multiple tables, proceed with splitting
+            if has_multiple_tables or (not pdf_path and might_have_multiple):
+                # Split the title
+                split_titles = split_table_title(cleaned_title)
+                
+                # If title splitting produced multiple parts
+                if len(split_titles) > 1:
+                    logger.info(f"Splitting title into {len(split_titles)} parts: {split_titles}")
+                    
+                    # If we don't have verified table positions from PDF, create artificial ones
+                    if not table_positions or len(table_positions) < len(split_titles):
+                        table_count = len(split_titles)
+                        height_per_table = 1.0 / table_count
+                        table_positions = [(i * height_per_table, (i + 1) * height_per_table) 
+                                          for i in range(table_count)]
+                    
+                    # Create separate items for each split title
+                    for j, split_title in enumerate(split_titles):
+                        new_item = item.copy()
+                        new_item['title'] = split_title
+                        new_item['table_position'] = j + 1  # 1-based index
+                        new_item['table_count'] = len(split_titles)
+                        if pdf_path:
+                            new_item['pdf_path'] = pdf_path
+                        if j < len(table_positions):
+                            new_item['table_vertical_range'] = table_positions[j]
+                        new_item['split_from'] = title
+                        new_item['split_method'] = 'pdf_verified' if has_multiple_tables else 'title_indicator'
+                        enriched_metadata.append(new_item)
+                    
+                    # Skip adding the original item since we created split items
+                    continue
+        
+        # For single tables or if we decided not to split
         item['table_position'] = 1
         item['table_count'] = 1
         # Record PDF path if found

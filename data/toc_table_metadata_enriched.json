@@ -10,33 +10,12 @@
   },
   {
     "section": "Uncategorized",
-    "title": "Federal Sandhill Crane Permits Issued in the Central Flyway",
+    "title": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota",
     "page": 3,
     "slug": "federal_sandhill_crane_permits_issued_in_the_central_flyway_and_minnesota",
     "original_title": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota ..............................",
     "table_position": 1,
-    "table_count": 2,
-    "table_vertical_range": [
-      0.0,
-      0.5
-    ],
-    "split_from": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota ..............................",
-    "split_method": "title_indicator"
-  },
-  {
-    "section": "Uncategorized",
-    "title": "Minnesota",
-    "page": 3,
-    "slug": "federal_sandhill_crane_permits_issued_in_the_central_flyway_and_minnesota",
-    "original_title": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota ..............................",
-    "table_position": 2,
-    "table_count": 2,
-    "table_vertical_range": [
-      0.5,
-      1.0
-    ],
-    "split_from": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota ..............................",
-    "split_method": "title_indicator"
+    "table_count": 1
   },
   {
     "section": "Uncategorized",
@@ -256,33 +235,12 @@
   },
   {
     "section": "Duck Harvests In The United States",
-    "title": "American Black Duck, Mottled Duck,",
+    "title": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard",
     "page": 16,
     "slug": "american_black_duck_mottled_duck_and_mexican_duck_x_mallard",
     "original_title": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard ...........................................",
     "table_position": 1,
-    "table_count": 2,
-    "table_vertical_range": [
-      0.0,
-      0.5
-    ],
-    "split_from": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard ...........................................",
-    "split_method": "title_indicator"
-  },
-  {
-    "section": "Duck Harvests In The United States",
-    "title": "Mexican Duck X Mallard",
-    "page": 16,
-    "slug": "american_black_duck_mottled_duck_and_mexican_duck_x_mallard",
-    "original_title": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard ...........................................",
-    "table_position": 2,
-    "table_count": 2,
-    "table_vertical_range": [
-      0.5,
-      1.0
-    ],
-    "split_from": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard ...........................................",
-    "split_method": "title_indicator"
+    "table_count": 1
   },
   {
     "section": "Duck Harvests In The United States",
