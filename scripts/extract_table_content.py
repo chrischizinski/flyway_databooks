@@ -4,9 +4,9 @@
 import json
 import os
 import logging
-import re
 from pathlib import Path
 import argparse
+import re
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -28,82 +28,6 @@ def save_json(data, file_path):
     """Save data to JSON file."""
     with open(file_path, 'w') as f:
         json.dump(data, f, indent=2)
-
-def calculate_page_offset(pdf_path, toc_data):
-    """
-    Calculate the offset between PDF page indices and printed page numbers
-    using the TOC data.
-    
-    Args:
-        pdf_path: Path to the PDF file
-        toc_data: Table of contents data with titles and page numbers
-    
-    Returns:
-        int: The calculated offset (printed_page - pdf_index)
-    """
-    if not toc_data:
-        logger.warning("No TOC data available to calculate page offset")
-        return 0
-        
-    # Flatten the TOC data to get all entries
-    all_entries = []
-    for section, entries in toc_data.items():
-        for title, page_num in entries.items():
-            all_entries.append((title, page_num))
-    
-    if not all_entries:
-        logger.warning("TOC data has no entries")
-        return 0
-    
-    # Sort by page number
-    all_entries.sort(key=lambda x: x[1])
-    
-    # Try to locate a few entries in the PDF to determine offset
-    offsets = []
-    try:
-        doc = fitz.open(pdf_path)
-        
-        # Test several entries from different parts of the document
-        test_indices = [0, len(all_entries)//4, len(all_entries)//2, 3*len(all_entries)//4, -1]
-        test_entries = [all_entries[i] for i in test_indices if 0 <= i < len(all_entries)]
-        
-        for title, printed_page in test_entries:
-            # Clean title for searching
-            clean_title = re.sub(r'[^\w\s]', '', title.strip().lower())
-            search_words = [word for word in clean_title.split() if len(word) > 3][:3]
-            
-            if not search_words:
-                continue
-                
-            search_term = ' '.join(search_words)
-            
-            # Search in a range around the expected page
-            expected_pdf_index = printed_page - 1  # Initial guess
-            search_range = 10
-            
-            for i in range(max(0, expected_pdf_index - search_range), 
-                           min(len(doc), expected_pdf_index + search_range + 1)):
-                text = doc[i].get_text().lower()
-                if search_term in text:
-                    offset = printed_page - i
-                    offsets.append(offset)
-                    logger.info(f"Found '{title}' on PDF page {i}, printed page {printed_page}, offset: {offset}")
-                    break
-        
-        doc.close()
-    except Exception as e:
-        logger.error(f"Error calculating page offset: {e}")
-    
-    # Determine the most common offset
-    if offsets:
-        from collections import Counter
-        offset_counts = Counter(offsets)
-        most_common_offset = offset_counts.most_common(1)[0][0]
-        logger.info(f"Calculated page offset: {most_common_offset}")
-        return most_common_offset
-    
-    logger.warning("Could not determine page offset, using default of 1")
-    return 1  # Default offset (commonly, PDF page 0 = printed page 1)
 
 def extract_table_from_pdf(pdf_path, page_number, vertical_range=None):
     """
@@ -264,51 +188,23 @@ def find_pdf_files(pdf_dir):
                 pdf_files.append(os.path.join(root, file))
     return pdf_files
 
-def find_pdf_for_title(title, toc_data, pdf_files):
-    """
-    Find the best matching PDF for a given table title using TOC data.
+def match_title_to_pdf(title, pdf_files):
+    """Find the best matching PDF for a given table title."""
+    # Clean up title for matching
+    clean_title = re.sub(r'[^\w\s]', '', title.lower())
+    title_words = [word for word in clean_title.split() if len(word) > 3]
     
-    Args:
-        title: The table title to find
-        toc_data: Dictionary mapping PDF paths to TOC data
-        pdf_files: List of available PDF files
-    
-    Returns:
-        Tuple of (pdf_path, page_number, section) or (None, None, None) if not found
-    """
-    # Clean title for matching
-    clean_title = re.sub(r'[^\w\s]', '', title.lower()).strip()
-    title_words = clean_title.split()
-    
-    # Check each TOC to see if this title exists
-    for pdf_path, toc in toc_data.items():
-        for section, entries in toc.items():
-            for toc_title, page_num in entries.items():
-                toc_clean = re.sub(r'[^\w\s]', '', toc_title.lower()).strip()
-                
-                # Check for exact match first
-                if clean_title == toc_clean:
-                    logger.info(f"Found exact TOC match for '{title}' in {pdf_path}")
-                    return pdf_path, page_num, section
-                
-                # Then check for significant word overlap (80% of words)
-                toc_words = toc_clean.split()
-                common_words = set(title_words) & set(toc_words)
-                if len(common_words) >= 0.8 * len(title_words) and len(common_words) >= 0.8 * len(toc_words):
-                    logger.info(f"Found partial TOC match for '{title}' -> '{toc_title}' in {pdf_path}")
-                    return pdf_path, page_num, section
-    
-    # If no match in TOC, try to find the best PDF match by filename keywords
-    best_pdf = None
+    best_match = None
     best_score = 0
     
-    for pdf_path in pdf_files:
-        filename = os.path.basename(pdf_path).lower()
+    for pdf_file in pdf_files:
+        # Get the filename without directory or extension
+        filename = os.path.basename(pdf_file).lower()
         filename = re.sub(r'\.pdf$', '', filename)
         filename = re.sub(r'[^\w\s]', '', filename)
         
         # Count how many significant words from the title are in the filename
-        score = sum(1 for word in title_words if len(word) > 3 and word in filename)
+        score = sum(1 for word in title_words if word in filename)
         
         # Prefer "databook" or "flyway" in the filename
         if 'databook' in filename or 'flyway' in filename:
@@ -316,58 +212,128 @@ def find_pdf_for_title(title, toc_data, pdf_files):
             
         if score > best_score:
             best_score = score
-            best_pdf = pdf_path
+            best_match = pdf_file
     
-    if best_pdf:
-        logger.info(f"Found best matching PDF for '{title}' by filename: {best_pdf}")
-        return best_pdf, None, None
-    
-    # If all else fails, return the first PDF if available
-    if pdf_files:
-        logger.warning(f"No match found for '{title}', using first available PDF")
-        return pdf_files[0], None, None
-    
-    return None, None, None
+    # If we have *any* PDF and no match was found, return the first one
+    if best_match is None and pdf_files:
+        logger.info(f"No specific match found for '{title}', using first available PDF")
+        return pdf_files[0]
+        
+    return best_match
 
-def extract_tables(metadata_path, toc_dir, pdf_dir, output_path, sample_size=5):
+def find_potential_page_number(title, pdf_path, item):
     """
-    Extract tables from PDFs based on metadata and TOC information.
+    Try to determine the page number for a table.
+    
+    First check if 'page' or 'pdf_index' exists in the item.
+    If not, try to find the page by searching for text similar to the title in the PDF.
+    """
+    # Check for explicit page information
+    if 'pdf_index' in item:
+        return item['pdf_index']
+    if 'page' in item:
+        return item['page'] - 1  # Convert from 1-based to 0-based
+    
+    # No explicit page info, try to locate by searching the PDF
+    try:
+        doc = fitz.open(pdf_path)
+        
+        # Clean up title for searching
+        search_title = title.split('(')[0]  # Remove anything in parentheses
+        search_title = re.sub(r'[^\w\s]', '', search_title).strip().lower()
+        
+        # Get first few significant words (3-4) for searching
+        search_words = [word for word in search_title.split() if len(word) > 3][:4]
+        
+        # Try different search strategies
+        for search_term in [
+            ' '.join(search_words),  # All words
+            search_words[0] if search_words else '',  # First word
+        ]:
+            if not search_term:
+                continue
+                
+            logger.info(f"Searching PDF for: '{search_term}'")
+            
+            # Search each page
+            for page_num in range(len(doc)):
+                page = doc[page_num]
+                text = page.get_text().lower()
+                
+                # Skip TOC and index pages (typically at the beginning)
+                if page_num < 5 and ("contents" in text or "table of contents" in text):
+                    continue
+                    
+                if search_term in text:
+                    logger.info(f"Found matching text on page {page_num}")
+                    doc.close()
+                    return page_num
+        
+        # If no match found, try searching for the title in TOC
+        for page_num in range(min(10, len(doc))):  # Check first 10 pages for TOC
+            page = doc[page_num]
+            text = page.get_text()
+            
+            if "contents" in text.lower() or "table of contents" in text.lower():
+                # This is likely a TOC page, search for our title
+                for line in text.split('\n'):
+                    if any(word in line.lower() for word in search_words if word):
+                        # Found title in TOC, now extract page number
+                        matches = re.search(r'(\d+)\s*$', line)
+                        if matches:
+                            page_num = int(matches.group(1)) - 1  # Convert to 0-based
+                            logger.info(f"Found page number in TOC: {page_num+1}")
+                            doc.close()
+                            return page_num
+        
+        # If all else fails, look for sections
+        if 'section' in item:
+            section = item['section'].lower()
+            for page_num in range(len(doc)):
+                page = doc[page_num]
+                text = page.get_text().lower()
+                
+                if section in text:
+                    logger.info(f"Found section on page {page_num}")
+                    doc.close()
+                    return page_num
+        
+        doc.close()
+    except Exception as e:
+        logger.error(f"Error searching PDF for page: {e}")
+    
+    # Default to page 0 if all methods fail
+    logger.warning(f"Could not determine page for '{title}', using default page 0")
+    return 0
+
+def extract_tables(metadata_path, pdf_dir, output_path, sample_size=5):
+    """
+    Extract a sample of tables from the metadata.
     
     Args:
-        metadata_path: Path to the enriched table metadata JSON
-        toc_dir: Directory containing extracted TOC JSON files
-        pdf_dir: Directory containing PDF files
-        output_path: Output path for extracted tables
-        sample_size: Number of tables to extract for testing
+        metadata_path (str): Path to enriched metadata JSON
+        pdf_dir (str): Directory containing PDF files
+        output_path (str): Output path for extracted tables
+        sample_size (int): Number of tables to extract for testing
     """
     metadata = load_json(metadata_path)
     logger.info(f"Loaded metadata with {len(metadata)} items")
     
+    # Print sample of metadata to understand structure
+    if metadata:
+        logger.info(f"Sample metadata item: {json.dumps(metadata[0], indent=2)}")
+    
+    # Print some diagnostic information about the metadata
+    statuses = {}
+    for item in metadata:
+        status = item.get('status', 'unknown')
+        statuses[status] = statuses.get(status, 0) + 1
+    
+    logger.info(f"Status counts: {statuses}")
+    
     # Find all PDF files in the directory
     pdf_files = find_pdf_files(pdf_dir)
     logger.info(f"Found {len(pdf_files)} PDF files in {pdf_dir}")
-    
-    # Load any available TOC data
-    toc_data = {}
-    for toc_file in Path(toc_dir).glob("*.json"):
-        try:
-            toc = load_json(toc_file)
-            pdf_name = toc_file.stem
-            
-            # Try to find matching PDF file
-            matching_pdfs = [p for p in pdf_files if os.path.basename(p).lower().startswith(pdf_name.lower())]
-            if matching_pdfs:
-                toc_data[matching_pdfs[0]] = toc
-                logger.info(f"Loaded TOC data for {matching_pdfs[0]}")
-        except Exception as e:
-            logger.error(f"Error loading TOC file {toc_file}: {e}")
-    
-    logger.info(f"Loaded TOC data for {len(toc_data)} PDFs")
-    
-    # Calculate page offsets for each PDF with TOC data
-    pdf_page_offsets = {}
-    for pdf_path, toc in toc_data.items():
-        pdf_page_offsets[pdf_path] = calculate_page_offset(pdf_path, toc)
     
     # Take a sample of items to extract
     tables_to_extract = metadata[:min(sample_size, len(metadata))]
@@ -379,45 +345,22 @@ def extract_tables(metadata_path, toc_dir, pdf_dir, output_path, sample_size=5):
         title = item.get('title', '')
         logger.info(f"Processing item: {title}")
         
-        # Find the matching PDF, page number, and section using TOC
-        pdf_path, page_num, section = find_pdf_for_title(title, toc_data, pdf_files)
+        # Find the best matching PDF
+        pdf_path = match_title_to_pdf(title, pdf_files)
         
         if not pdf_path:
             logger.warning(f"Could not find a matching PDF for: {title}")
             continue
-        
-        # Update section if found in TOC
-        if section and not item.get('section'):
-            item['section'] = section
             
-        # Calculate the PDF index from the printed page number
-        page_offset = pdf_page_offsets.get(pdf_path, 1)  # Default offset is 1
+        logger.info(f"Found matching PDF: {pdf_path}")
         
-        if page_num is not None:
-            # Use page number from TOC
-            page_number = page_num - page_offset
-            logger.info(f"Using page {page_num} from TOC (PDF index: {page_number})")
-        elif 'page' in item:
-            # Use page from metadata
-            page_number = item['page'] - page_offset
-            logger.info(f"Using page {item['page']} from metadata (PDF index: {page_number})")
-        elif 'pdf_index' in item:
-            # Use pdf_index directly
-            page_number = item['pdf_index']
-            logger.info(f"Using pdf_index {page_number} from metadata")
-        else:
-            # Default to page 0
-            page_number = 0
-            logger.warning(f"No page information available for {title}, using default page 0")
-        
-        # Ensure page number is valid
-        page_number = max(0, page_number)
+        # Try to determine the page number
+        page_number = find_potential_page_number(title, pdf_path, item)
         
         # Get vertical range if specified
         vertical_range = None
         if 'table_vertical_range' in item:
             vertical_range = tuple(item['table_vertical_range'])
-            logger.info(f"Using vertical range: {vertical_range}")
         
         logger.info(f"Extracting table: {title} from {pdf_path}, page {page_number}")
         
@@ -428,7 +371,6 @@ def extract_tables(metadata_path, toc_dir, pdf_dir, output_path, sample_size=5):
                     "title": title,
                     "section": item.get('section', ''),
                     "page": page_number,
-                    "printed_page": page_number + page_offset if page_offset else None,
                     "pdf_path": pdf_path,
                     "table_position": item.get('table_position', 1),
                     "content": table_content
@@ -450,8 +392,6 @@ def main():
     parser = argparse.ArgumentParser(description="Extract table content from PDFs based on metadata")
     parser.add_argument("--metadata", default="data/toc_table_metadata_enriched.json", 
                         help="Path to enriched table metadata")
-    parser.add_argument("--toc-dir", default="data/toc", 
-                        help="Directory containing extracted TOC JSON files")
     parser.add_argument("--pdf-dir", default="data/original", 
                         help="Directory containing PDF files")
     parser.add_argument("--output", default="data/extracted_tables_sample.json", 
@@ -465,10 +405,7 @@ def main():
         logger.error("PyMuPDF (fitz) is required for table extraction. Install with: pip install pymupdf")
         return
     
-    # Create TOC directory if it doesn't exist
-    os.makedirs(args.toc_dir, exist_ok=True)
-    
-    extract_tables(args.metadata, args.toc_dir, args.pdf_dir, args.output, args.sample_size)
+    extract_tables(args.metadata, args.pdf_dir, args.output, args.sample_size)
 
 if __name__ == "__main__":
     main()
