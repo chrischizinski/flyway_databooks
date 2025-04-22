@@ -1,0 +1,1376 @@
+[
+  {
+    "section": "Uncategorized",
+    "title": "Migratory Game Bird Permit Sales in Canada",
+    "page": 2,
+    "slug": "migratory_game_bird_permit_sales_in_canada",
+    "original_title": "Migratory Game Bird Permit Sales in Canada ...............................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Uncategorized",
+    "title": "Federal Sandhill Crane Permits Issued in the Central Flyway",
+    "page": 3,
+    "slug": "federal_sandhill_crane_permits_issued_in_the_central_flyway_and_minnesota",
+    "original_title": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota ..............................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota ..............................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Uncategorized",
+    "title": "Minnesota",
+    "page": 3,
+    "slug": "federal_sandhill_crane_permits_issued_in_the_central_flyway_and_minnesota",
+    "original_title": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota ..............................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Federal Sandhill Crane Permits Issued in the Central Flyway and Minnesota ..............................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Uncategorized",
+    "title": "Tundra Swan Hunting Permits",
+    "page": 4,
+    "slug": "tundra_swan_hunting_permits",
+    "original_title": "Tundra Swan Hunting Permits ......................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Active Duck Hunters",
+    "page": 6,
+    "slug": "active_duck_hunters_and_total_duck_hunter_days",
+    "original_title": "Active Duck Hunters and Total Duck Hunter Days ........................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Active Duck Hunters and Total Duck Hunter Days ........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Total Duck Hunter Days",
+    "page": 6,
+    "slug": "active_duck_hunters_and_total_duck_hunter_days",
+    "original_title": "Active Duck Hunters and Total Duck Hunter Days ........................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Active Duck Hunters and Total Duck Hunter Days ........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Average Duck Hunter Days",
+    "page": 7,
+    "slug": "average_duck_hunter_days_and_seasonal_duck_baghunter",
+    "original_title": "Average Duck Hunter Days and Seasonal Duck Bag/Hunter ........................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Average Duck Hunter Days and Seasonal Duck Bag/Hunter ........................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Seasonal Duck Bag/Hunter",
+    "page": 7,
+    "slug": "average_duck_hunter_days_and_seasonal_duck_baghunter",
+    "original_title": "Average Duck Hunter Days and Seasonal Duck Bag/Hunter ........................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Average Duck Hunter Days and Seasonal Duck Bag/Hunter ........................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Active Goose Hunters",
+    "page": 8,
+    "slug": "active_goose_hunters_and_total_goose_hunter_days",
+    "original_title": "Active Goose Hunters and Total Goose Hunter Days ...................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Active Goose Hunters and Total Goose Hunter Days ...................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Total Goose Hunter Days",
+    "page": 8,
+    "slug": "active_goose_hunters_and_total_goose_hunter_days",
+    "original_title": "Active Goose Hunters and Total Goose Hunter Days ...................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Active Goose Hunters and Total Goose Hunter Days ...................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Average Goose Hunter Days",
+    "page": 9,
+    "slug": "average_goose_hunter_days_and_seasonal_goose_baghunter",
+    "original_title": "Average Goose Hunter Days and Seasonal Goose Bag/Hunter ....................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Average Goose Hunter Days and Seasonal Goose Bag/Hunter ....................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Seasonal Goose Bag/Hunter",
+    "page": 9,
+    "slug": "average_goose_hunter_days_and_seasonal_goose_baghunter",
+    "original_title": "Average Goose Hunter Days and Seasonal Goose Bag/Hunter ....................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Average Goose Hunter Days and Seasonal Goose Bag/Hunter ....................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Active Mid-Continent Sandhill Crane Hunters",
+    "page": 10,
+    "slug": "active_midcontinent_sandhill_crane_hunters",
+    "original_title": "Active Mid\u2010Continent Sandhill Crane Hunters ............................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Active Tundra Swan Hunters",
+    "page": 11,
+    "slug": "active_tundra_swan_hunters",
+    "original_title": "Active Tundra Swan Hunters.......................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Waterfowl And Crane Hunter Activity And Success",
+    "title": "Average Seasonal Tundra Swan Bag Per Active Swan Hunter",
+    "page": 12,
+    "slug": "average_seasonal_tundra_swan_bag_per_active_swan_hunter",
+    "original_title": "Average Seasonal Tundra Swan Bag Per Active Swan Hunter ....................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Mallard, Gadwall,",
+    "page": 14,
+    "slug": "mallard_gadwall_and_american_wigeon",
+    "original_title": "Mallard, Gadwall, and American Wigeon ...................................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Mallard, Gadwall, and American Wigeon ...................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "American Wigeon",
+    "page": 14,
+    "slug": "mallard_gadwall_and_american_wigeon",
+    "original_title": "Mallard, Gadwall, and American Wigeon ...................................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Mallard, Gadwall, and American Wigeon ...................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Northern Pintail, Northern Shovel,",
+    "page": 15,
+    "slug": "northern_pintail_northern_shoveler_and_wood_duck",
+    "original_title": "Northern Pintail, Northern Shoveler, and Wood Duck ...............................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Northern Pintail, Northern Shoveler, and Wood Duck ...............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Wood Duck",
+    "page": 15,
+    "slug": "northern_pintail_northern_shoveler_and_wood_duck",
+    "original_title": "Northern Pintail, Northern Shoveler, and Wood Duck ...............................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Northern Pintail, Northern Shoveler, and Wood Duck ...............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "American Black Duck, Mottled Duck,",
+    "page": 16,
+    "slug": "american_black_duck_mottled_duck_and_mexican_duck_x_mallard",
+    "original_title": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard ...........................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard ...........................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Mexican Duck X Mallard",
+    "page": 16,
+    "slug": "american_black_duck_mottled_duck_and_mexican_duck_x_mallard",
+    "original_title": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard ...........................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "American Black Duck, Mottled Duck, and Mexican Duck X Mallard ...........................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Black-Bellied Whistling",
+    "page": 17,
+    "slug": "blackbellied_whistling_and_fulvous_tree_duck",
+    "original_title": "Black\u2010bellied Whistling and Fulvous Tree Duck ..........................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Black\u2010bellied Whistling and Fulvous Tree Duck ..........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Fulvous Tree Duck",
+    "page": 17,
+    "slug": "blackbellied_whistling_and_fulvous_tree_duck",
+    "original_title": "Black\u2010bellied Whistling and Fulvous Tree Duck ..........................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Black\u2010bellied Whistling and Fulvous Tree Duck ..........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Blue-Winged Teal (Special",
+    "page": 18,
+    "slug": "bluewinged_teal_special_regular_all_seasons",
+    "original_title": "Blue\u2010winged Teal (Special, Regular, All Seasons) ........................................................................",
+    "table_position": 1,
+    "table_count": 3,
+    "table_vertical_range": [
+      0.0,
+      0.3333333333333333
+    ],
+    "split_from": "Blue\u2010winged Teal (Special, Regular, All Seasons) ........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Regular",
+    "page": 18,
+    "slug": "bluewinged_teal_special_regular_all_seasons",
+    "original_title": "Blue\u2010winged Teal (Special, Regular, All Seasons) ........................................................................",
+    "table_position": 2,
+    "table_count": 3,
+    "table_vertical_range": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "split_from": "Blue\u2010winged Teal (Special, Regular, All Seasons) ........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "All Seasons)",
+    "page": 18,
+    "slug": "bluewinged_teal_special_regular_all_seasons",
+    "original_title": "Blue\u2010winged Teal (Special, Regular, All Seasons) ........................................................................",
+    "table_position": 3,
+    "table_count": 3,
+    "table_vertical_range": [
+      0.6666666666666666,
+      1.0
+    ],
+    "split_from": "Blue\u2010winged Teal (Special, Regular, All Seasons) ........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Green-Winged Teal (Special",
+    "page": 19,
+    "slug": "greenwinged_teal_special_regular_all_seasons",
+    "original_title": "Green\u2010winged Teal (Special, Regular, All Seasons) .....................................................................",
+    "table_position": 1,
+    "table_count": 3,
+    "table_vertical_range": [
+      0.0,
+      0.3333333333333333
+    ],
+    "split_from": "Green\u2010winged Teal (Special, Regular, All Seasons) .....................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Regular",
+    "page": 19,
+    "slug": "greenwinged_teal_special_regular_all_seasons",
+    "original_title": "Green\u2010winged Teal (Special, Regular, All Seasons) .....................................................................",
+    "table_position": 2,
+    "table_count": 3,
+    "table_vertical_range": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "split_from": "Green\u2010winged Teal (Special, Regular, All Seasons) .....................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "All Seasons)",
+    "page": 19,
+    "slug": "greenwinged_teal_special_regular_all_seasons",
+    "original_title": "Green\u2010winged Teal (Special, Regular, All Seasons) .....................................................................",
+    "table_position": 3,
+    "table_count": 3,
+    "table_vertical_range": [
+      0.6666666666666666,
+      1.0
+    ],
+    "split_from": "Green\u2010winged Teal (Special, Regular, All Seasons) .....................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Redhead, Canvasback,",
+    "page": 20,
+    "slug": "redhead_canvasback_and_ringnecked_duck",
+    "original_title": "Redhead, Canvasback, and Ring\u2010necked Duck............................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Redhead, Canvasback, and Ring\u2010necked Duck............................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Ring-Necked Duck",
+    "page": 20,
+    "slug": "redhead_canvasback_and_ringnecked_duck",
+    "original_title": "Redhead, Canvasback, and Ring\u2010necked Duck............................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Redhead, Canvasback, and Ring\u2010necked Duck............................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Greater Scaup, Lesser Scaup,",
+    "page": 21,
+    "slug": "greater_scaup_lesser_scaup_and_combined",
+    "original_title": "Greater Scaup, Lesser Scaup, and Combined .............................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Greater Scaup, Lesser Scaup, and Combined .............................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Combined",
+    "page": 21,
+    "slug": "greater_scaup_lesser_scaup_and_combined",
+    "original_title": "Greater Scaup, Lesser Scaup, and Combined .............................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Greater Scaup, Lesser Scaup, and Combined .............................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Common Goldeneye, Ruddy Duck,",
+    "page": 22,
+    "slug": "common_goldeneye_ruddy_duck_and_hooded_merganser",
+    "original_title": "Common Goldeneye, Ruddy Duck, and Hooded Merganser ......................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Common Goldeneye, Ruddy Duck, and Hooded Merganser ......................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Hooded Merganser",
+    "page": 22,
+    "slug": "common_goldeneye_ruddy_duck_and_hooded_merganser",
+    "original_title": "Common Goldeneye, Ruddy Duck, and Hooded Merganser ......................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Common Goldeneye, Ruddy Duck, and Hooded Merganser ......................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In The United States",
+    "title": "Total Ducks",
+    "page": 23,
+    "slug": "total_ducks",
+    "original_title": "Total Ducks ..................................................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "Mallard All, Female,",
+    "page": 25,
+    "slug": "mallard_all_female_and_male_age_ratios",
+    "original_title": "Mallard All, Female, and Male Age Ratios ..................................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Mallard All, Female, and Male Age Ratios ..................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "Male Age Ratios",
+    "page": 25,
+    "slug": "mallard_all_female_and_male_age_ratios",
+    "original_title": "Mallard All, Female, and Male Age Ratios ..................................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Mallard All, Female, and Male Age Ratios ..................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "N. Pintail",
+    "page": 26,
+    "slug": "n_pintail_gadwall_a_wigeon_wood_duck_age_ratios",
+    "original_title": "N. Pintail, Gadwall, A. Wigeon, Wood Duck Age Ratios..............................................................",
+    "table_position": 1,
+    "table_count": 4,
+    "table_vertical_range": [
+      0.0,
+      0.25
+    ],
+    "split_from": "N. Pintail, Gadwall, A. Wigeon, Wood Duck Age Ratios..............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "Gadwall",
+    "page": 26,
+    "slug": "n_pintail_gadwall_a_wigeon_wood_duck_age_ratios",
+    "original_title": "N. Pintail, Gadwall, A. Wigeon, Wood Duck Age Ratios..............................................................",
+    "table_position": 2,
+    "table_count": 4,
+    "table_vertical_range": [
+      0.25,
+      0.5
+    ],
+    "split_from": "N. Pintail, Gadwall, A. Wigeon, Wood Duck Age Ratios..............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "A. Wigeon",
+    "page": 26,
+    "slug": "n_pintail_gadwall_a_wigeon_wood_duck_age_ratios",
+    "original_title": "N. Pintail, Gadwall, A. Wigeon, Wood Duck Age Ratios..............................................................",
+    "table_position": 3,
+    "table_count": 4,
+    "table_vertical_range": [
+      0.5,
+      0.75
+    ],
+    "split_from": "N. Pintail, Gadwall, A. Wigeon, Wood Duck Age Ratios..............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "Wood Duck Age Ratios",
+    "page": 26,
+    "slug": "n_pintail_gadwall_a_wigeon_wood_duck_age_ratios",
+    "original_title": "N. Pintail, Gadwall, A. Wigeon, Wood Duck Age Ratios..............................................................",
+    "table_position": 4,
+    "table_count": 4,
+    "table_vertical_range": [
+      0.75,
+      1.0
+    ],
+    "split_from": "N. Pintail, Gadwall, A. Wigeon, Wood Duck Age Ratios..............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "Redhead, Greater Scaup,",
+    "page": 27,
+    "slug": "redhead_greater_scaup_and_lesser_scaup_age_ratios",
+    "original_title": "Redhead, Greater Scaup, and Lesser Scaup Age Ratios ..............................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Redhead, Greater Scaup, and Lesser Scaup Age Ratios ..............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "Lesser Scaup Age Ratios",
+    "page": 27,
+    "slug": "redhead_greater_scaup_and_lesser_scaup_age_ratios",
+    "original_title": "Redhead, Greater Scaup, and Lesser Scaup Age Ratios ..............................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Redhead, Greater Scaup, and Lesser Scaup Age Ratios ..............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "Blue-Winged Teal",
+    "page": 28,
+    "slug": "bluewinged_teal_and_greenwinged_teal_age_ratios",
+    "original_title": "Blue\u2010winged Teal and Green\u2010winged Teal Age Ratios ................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Blue\u2010winged Teal and Green\u2010winged Teal Age Ratios ................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Age Ratios In The United States Harvest",
+    "title": "Green-Winged Teal Age Ratios",
+    "page": 28,
+    "slug": "bluewinged_teal_and_greenwinged_teal_age_ratios",
+    "original_title": "Blue\u2010winged Teal and Green\u2010winged Teal Age Ratios ................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Blue\u2010winged Teal and Green\u2010winged Teal Age Ratios ................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Sex Ratios In The United States Harvest",
+    "title": "Mallard Adult",
+    "page": 30,
+    "slug": "mallard_adult_and_immature_sex_ratios",
+    "original_title": "Mallard Adult and Immature Sex Ratios .....................................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Mallard Adult and Immature Sex Ratios .....................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Sex Ratios In The United States Harvest",
+    "title": "Immature Sex Ratios",
+    "page": 30,
+    "slug": "mallard_adult_and_immature_sex_ratios",
+    "original_title": "Mallard Adult and Immature Sex Ratios .....................................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Mallard Adult and Immature Sex Ratios .....................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Duck Harvests In Canada",
+    "title": "Mallard",
+    "page": 32,
+    "slug": "mallard",
+    "original_title": "Mallard ........................................................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Duck Harvests In Canada",
+    "title": "Northern Pintail",
+    "page": 33,
+    "slug": "northern_pintail",
+    "original_title": "Northern Pintail ..........................................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Duck Harvests In Canada",
+    "title": "Total Ducks",
+    "page": 34,
+    "slug": "total_ducks",
+    "original_title": "Total Ducks ..................................................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Duck Harvests In North America",
+    "title": "Mallard",
+    "page": 36,
+    "slug": "mallard",
+    "original_title": "Mallard ........................................................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "Snow/Blue geese, Ross\u2019s Geese,",
+    "page": 38,
+    "slug": "snowblue_geese_rosss_geese_and_all_light_geese",
+    "original_title": "Snow/Blue Geese, Ross\u2019s Geese, and All Light Geese ................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Snow/Blue Geese, Ross\u2019s Geese, and All Light Geese ................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "All Light Geese",
+    "page": 38,
+    "slug": "snowblue_geese_rosss_geese_and_all_light_geese",
+    "original_title": "Snow/Blue Geese, Ross\u2019s Geese, and All Light Geese ................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Snow/Blue Geese, Ross\u2019s Geese, and All Light Geese ................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "White-Fronted Geese, Canada Geese-Regular",
+    "page": 39,
+    "slug": "whitefronted_geese_canada_geeseregular_and_all_season",
+    "original_title": "White\u2010fronted Geese, Canada Geese\u2010Regular and All Season ...................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "White\u2010fronted Geese, Canada Geese\u2010Regular and All Season ...................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "All Season",
+    "page": 39,
+    "slug": "whitefronted_geese_canada_geeseregular_and_all_season",
+    "original_title": "White\u2010fronted Geese, Canada Geese\u2010Regular and All Season ...................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "White\u2010fronted Geese, Canada Geese\u2010Regular and All Season ...................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "Total Geese",
+    "page": 40,
+    "slug": "total_geese",
+    "original_title": "Total Geese .................................................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "CFAN, Large,",
+    "page": 41,
+    "slug": "cfan_large_and_unknown_canada_geese_in_the_central_flyway_19992019",
+    "original_title": "CFAN, Large, and Unknown Canada Geese in the Central Flyway (1999\u20102019) .........................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "CFAN, Large, and Unknown Canada Geese in the Central Flyway (1999\u20102019) .........................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "Unknown Canada Geese in the Central Flyway (1999-2019)",
+    "page": 41,
+    "slug": "cfan_large_and_unknown_canada_geese_in_the_central_flyway_19992019",
+    "original_title": "CFAN, Large, and Unknown Canada Geese in the Central Flyway (1999\u20102019) .........................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "CFAN, Large, and Unknown Canada Geese in the Central Flyway (1999\u20102019) .........................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "Cackling",
+    "page": 42,
+    "slug": "cackling_and_canada_goose_in_the_central_flyway",
+    "original_title": "Cackling and Canada Goose in the Central Flyway .....................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Cackling and Canada Goose in the Central Flyway .....................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Harvests In The United States And Canada",
+    "title": "Canada Goose in the Central Flyway",
+    "page": 42,
+    "slug": "cackling_and_canada_goose_in_the_central_flyway",
+    "original_title": "Cackling and Canada Goose in the Central Flyway .....................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Cackling and Canada Goose in the Central Flyway .....................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Age Ratios In The United States Harvest",
+    "title": "Canada Goose, White\u2010fronted Goose, Snow Goose,",
+    "page": 44,
+    "slug": "canada_goose_whitefronted_goose_snow_goose_and_rosss_goose_age_ratios",
+    "original_title": "Canada Goose, White\u2010fronted Goose, Snow Goose, and Ross\u2019s Goose Age Ratios  ..................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Canada Goose, White\u2010fronted Goose, Snow Goose, and Ross\u2019s Goose Age Ratios  ..................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Goose Age Ratios In The United States Harvest",
+    "title": "Ross\u2019s Goose Age Ratios ..................",
+    "page": 44,
+    "slug": "canada_goose_whitefronted_goose_snow_goose_and_rosss_goose_age_ratios",
+    "original_title": "Canada Goose, White\u2010fronted Goose, Snow Goose, and Ross\u2019s Goose Age Ratios  ..................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Canada Goose, White\u2010fronted Goose, Snow Goose, and Ross\u2019s Goose Age Ratios  ..................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Webless Harvest And Hunter Activity In The United States",
+    "title": "Central Management Unit Mourning Dove Harvest Statistics",
+    "page": 46,
+    "slug": "central_management_unit_mourning_dove_harvest_statistics",
+    "original_title": "Central Management Unit Mourning Dove Harvest Statistics ...................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Webless Harvest And Hunter Activity In The United States",
+    "title": "Central Management Unit White-Winged Dove Harvest Statistics",
+    "page": 47,
+    "slug": "central_management_unit_whitewinged_dove_harvest_statistics",
+    "original_title": "Central Management Unit White\u2010winged Dove Harvest Statistics ............................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Webless Harvest And Hunter Activity In The United States",
+    "title": "four corners (interior) population band\u2010tailed pigeon harvest statistics",
+    "page": 48,
+    "slug": "four_corners_interior_population_bandtailed_pigeon_harvest_statistics",
+    "original_title": "Four Corners (Interior) Population Band\u2010tailed Pigeon Harvest Statistics .................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Webless Harvest And Hunter Activity In The United States",
+    "title": "Central Management Region Woodcock Harvest Statistics",
+    "page": 49,
+    "slug": "central_management_region_woodcock_harvest_statistics",
+    "original_title": "Central Management Region Woodcock Harvest Statistics .......................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Waterfowl Population Survey Information",
+    "title": "Breeding Population Estimates for 10 Duck Species",
+    "page": 51,
+    "slug": "breeding_population_estimates_for_10_duck_species",
+    "original_title": "Breeding Population Estimates for 10 Duck Species ..................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Tundra Swan Harvest",
+    "title": "Harvest Estimates for the Eastern",
+    "page": 53,
+    "slug": "harvest_estimates_for_the_eastern_and_western_populations",
+    "original_title": "Harvest Estimates for the Eastern and Western Populations ....................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Harvest Estimates for the Eastern and Western Populations ....................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Tundra Swan Harvest",
+    "title": "Western Populations",
+    "page": 53,
+    "slug": "harvest_estimates_for_the_eastern_and_western_populations",
+    "original_title": "Harvest Estimates for the Eastern and Western Populations ....................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Harvest Estimates for the Eastern and Western Populations ....................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "Frameworks for CF Regular Canada Goose Seasons",
+    "page": 55,
+    "slug": "frameworks_for_cf_regular_canada_goose_seasons_20152022",
+    "original_title": "Frameworks for CF Regular Canada Goose Seasons, 2015\u20102022 ...............................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Frameworks for CF Regular Canada Goose Seasons, 2015\u20102022 ...............................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "2015-2022",
+    "page": 55,
+    "slug": "frameworks_for_cf_regular_canada_goose_seasons_20152022",
+    "original_title": "Frameworks for CF Regular Canada Goose Seasons, 2015\u20102022 ...............................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Frameworks for CF Regular Canada Goose Seasons, 2015\u20102022 ...............................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "Frameworks for CF Light Goose Seasons",
+    "page": 56,
+    "slug": "frameworks_for_cf_light_goose_seasons_20152022",
+    "original_title": "Frameworks for CF Light Goose Seasons, 2015\u20102022 .................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Frameworks for CF Light Goose Seasons, 2015\u20102022 .................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "2015-2022",
+    "page": 56,
+    "slug": "frameworks_for_cf_light_goose_seasons_20152022",
+    "original_title": "Frameworks for CF Light Goose Seasons, 2015\u20102022 .................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Frameworks for CF Light Goose Seasons, 2015\u20102022 .................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "frameworks for u.s. light goose seasons",
+    "page": 57,
+    "slug": "frameworks_for_us_light_goose_seasons_20152022",
+    "original_title": "Frameworks for U.S. Light Goose Seasons, 2015\u20102022 ..............................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Frameworks for U.S. Light Goose Seasons, 2015\u20102022 ..............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "2015\u20102022",
+    "page": 57,
+    "slug": "frameworks_for_us_light_goose_seasons_20152022",
+    "original_title": "Frameworks for U.S. Light Goose Seasons, 2015\u20102022 ..............................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Frameworks for U.S. Light Goose Seasons, 2015\u20102022 ..............................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "Frameworks for Sandhill Crane Hunting",
+    "page": 58,
+    "slug": "frameworks_for_sandhill_crane_hunting_20152022",
+    "original_title": "Frameworks for Sandhill Crane Hunting, 2015\u20102022 ..................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Frameworks for Sandhill Crane Hunting, 2015\u20102022 ..................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "2015-2022",
+    "page": 58,
+    "slug": "frameworks_for_sandhill_crane_hunting_20152022",
+    "original_title": "Frameworks for Sandhill Crane Hunting, 2015\u20102022 ..................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Frameworks for Sandhill Crane Hunting, 2015\u20102022 ..................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "Frameworks for CF Duck Hunting",
+    "page": 59,
+    "slug": "frameworks_for_cf_duck_hunting_20152022",
+    "original_title": "Frameworks for CF Duck Hunting, 2015\u20102022 ............................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Frameworks for CF Duck Hunting, 2015\u20102022 ............................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Central Flyway Frameworks",
+    "title": "2015-2022",
+    "page": 59,
+    "slug": "frameworks_for_cf_duck_hunting_20152022",
+    "original_title": "Frameworks for CF Duck Hunting, 2015\u20102022 ............................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Frameworks for CF Duck Hunting, 2015\u20102022 ............................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "AHM Decision Matrices",
+    "page": 61,
+    "slug": "ahm_decision_matrices_19952000",
+    "original_title": "AHM Decision Matrices, 1995\u20102000 ...........................................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "AHM Decision Matrices, 1995\u20102000 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "1995-2000",
+    "page": 61,
+    "slug": "ahm_decision_matrices_19952000",
+    "original_title": "AHM Decision Matrices, 1995\u20102000 ...........................................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "AHM Decision Matrices, 1995\u20102000 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "AHM Decision Matrices",
+    "page": 62,
+    "slug": "ahm_decision_matrices_20012006",
+    "original_title": "AHM Decision Matrices, 2001\u20102006 ...........................................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "AHM Decision Matrices, 2001\u20102006 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "2001-2006",
+    "page": 62,
+    "slug": "ahm_decision_matrices_20012006",
+    "original_title": "AHM Decision Matrices, 2001\u20102006 ...........................................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "AHM Decision Matrices, 2001\u20102006 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "AHM Decision Matrices",
+    "page": 63,
+    "slug": "ahm_decision_matrices_20072012",
+    "original_title": "AHM Decision Matrices, 2007\u20102012 ...........................................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "AHM Decision Matrices, 2007\u20102012 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "2007-2012",
+    "page": 63,
+    "slug": "ahm_decision_matrices_20072012",
+    "original_title": "AHM Decision Matrices, 2007\u20102012 ...........................................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "AHM Decision Matrices, 2007\u20102012 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "AHM Decision Matrices",
+    "page": 64,
+    "slug": "ahm_decision_matrices_20132018",
+    "original_title": "AHM Decision Matrices, 2013\u20102018 ...........................................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "AHM Decision Matrices, 2013\u20102018 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "2013-2018",
+    "page": 64,
+    "slug": "ahm_decision_matrices_20132018",
+    "original_title": "AHM Decision Matrices, 2013\u20102018 ...........................................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "AHM Decision Matrices, 2013\u20102018 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "AHM Decision Matrices",
+    "page": 65,
+    "slug": "ahm_decision_matrices_20192023",
+    "original_title": "AHM Decision Matrices, 2019\u20102023 ...........................................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "AHM Decision Matrices, 2019\u20102023 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Adaptive Harvest Management",
+    "title": "2019-2023",
+    "page": 65,
+    "slug": "ahm_decision_matrices_20192023",
+    "original_title": "AHM Decision Matrices, 2019\u20102023 ...........................................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "AHM Decision Matrices, 2019\u20102023 ...........................................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "Central Flyway Council",
+    "page": 67,
+    "slug": "central_flyway_council",
+    "original_title": "Central Flyway Council ................................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "Central Flyway Waterfowl Technical Committee",
+    "page": 68,
+    "slug": "central_flyway_waterfowl_technical_committee",
+    "original_title": "Central Flyway Waterfowl Technical Committee .......................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "central flyway webless game bird technical committee",
+    "page": 69,
+    "slug": "central_flyway_webless_game_bird_technical_committee",
+    "original_title": "Central Flyway Webless Game Bird Technical Committee .........................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "Central Management Unit Dove Technical Committee",
+    "page": 70,
+    "slug": "central_management_unit_dove_technical_committee",
+    "original_title": "Central Management Unit Dove Technical Committee ..............................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "Central Flyway Nongame Bird Technical Committee",
+    "page": 71,
+    "slug": "central_flyway_nongame_bird_technical_committee",
+    "original_title": "Central Flyway Nongame Bird Technical Committee .................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "Central Flyway Meeting Locations",
+    "page": 72,
+    "slug": "central_flyway_meeting_locations",
+    "original_title": "Central Flyway Meeting Locations ..............................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "gay simpson",
+    "page": 73,
+    "slug": "gay_simpson_and_joe_gabig_award_recipients",
+    "original_title": "Gay Simpson and Joe Gabig Award Recipients ...........................................................................",
+    "table_position": 1,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.0,
+      0.5
+    ],
+    "split_from": "Gay Simpson and Joe Gabig Award Recipients ...........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "joe gabig award recipients",
+    "page": 73,
+    "slug": "gay_simpson_and_joe_gabig_award_recipients",
+    "original_title": "Gay Simpson and Joe Gabig Award Recipients ...........................................................................",
+    "table_position": 2,
+    "table_count": 2,
+    "table_vertical_range": [
+      0.5,
+      1.0
+    ],
+    "split_from": "Gay Simpson and Joe Gabig Award Recipients ...........................................................................",
+    "split_method": "title_indicator"
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "Central Flyway Consultants to Service Regulations Committee",
+    "page": 74,
+    "slug": "central_flyway_consultants_to_service_regulations_committee",
+    "original_title": "Central Flyway Consultants to Service Regulations Committee .................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "Service Regulations Committee",
+    "page": 75,
+    "slug": "service_regulations_committee",
+    "original_title": "Service Regulations Committee ..................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "USFWS Flyway Representatives",
+    "page": 76,
+    "slug": "usfws_flyway_representatives",
+    "original_title": "USFWS Flyway Representatives ..................................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  },
+  {
+    "section": "Historical Membership And Award Lists",
+    "title": "USFWS Regional Migratory Bird Chiefs",
+    "page": 77,
+    "slug": "usfws_regional_migratory_bird_chiefs",
+    "original_title": "USFWS Regional Migratory Bird Chiefs .......................................................................................",
+    "table_position": 1,
+    "table_count": 1
+  }
+]
