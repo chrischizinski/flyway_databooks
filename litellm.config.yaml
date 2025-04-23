@@ -1,0 +1,5 @@
+model_list:
+  - model_name: local-mistral
+    litellm_provider: openai_compatible
+    model_info:
+      model_path: "/Users/cchizinski2/llama-models/mistral/mistral-7b-instruct-v0.1.Q4_K_M.gguf"
